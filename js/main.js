@@ -1,5 +1,10 @@
-const jee = () => {
-  console.log('jee')
-}
+import 'phaser'
+import { SimpleScene } from './scenes/simple-scene';
 
-jee()
+const gameConfig = {
+  width: 680,
+  height: 400,
+  scene: SimpleScene
+};
+
+new Phaser.Game(gameConfig);
